@@ -1,10 +1,15 @@
 [package]
 name = "zero-width"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Zero Width steganography implementation"
 license-file = "LICENSE"
+repository = "https://github.com/hrchlhck/zero-width.git"
 
 [dependencies]
 clap = { version = "4.6.7", features = ["derive"] }
 clap_derive = "4.6.7"
+
+[[bin]]
+name = "zw"
+path = "src/main.rs"
